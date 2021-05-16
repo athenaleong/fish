@@ -6,5 +6,10 @@
     "background": {
         "service_worker": "background.js"
       },
-    "permissions":[]
+    "permissions": [
+        "tabs"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    }
   }
