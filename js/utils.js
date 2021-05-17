@@ -6,11 +6,11 @@ function Context() {
         return hashBuffer;
     };
 
-    this._GetDomainHash = async () => {
-        const dn = window.location.hostname;
-        console.log("Domain name: ", dn)
-        return this._Sha256(dn);
-    };
+    // this._GetDomainHash = async () => {
+    //     const dn = window.location.hostname;
+    //     console.log("Domain name: ", dn)
+    //     return this._Sha256(dn);
+    // };
 
     this.GetColour = async () => {
         this._domainHash.then(async (h)=>{
@@ -28,7 +28,7 @@ function Context() {
 }
 
 function UpdateHTML() {
-    
+
 
 
 }
